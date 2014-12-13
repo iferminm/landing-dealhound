@@ -12,4 +12,3 @@ class LeadForm(forms.ModelForm):
     def save(self, *args, **kwargs):
         super(LeadForm, self).save(*args, **kwargs)
 
-        send_mail(self.email)
